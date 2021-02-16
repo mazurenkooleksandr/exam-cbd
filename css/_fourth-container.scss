@@ -23,7 +23,7 @@
         margin-top: 4.16%;
 
         .fourth-container__block {
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             width: 100%;
             max-width: 600px;
             height: 500px;
@@ -44,12 +44,12 @@
 
             .fourth-container__block_product {
                 display: block;
-                margin: 30px auto;
+                margin: 6.5% auto;
             }
 
             .fourth-container__block_product-box {
                 display: block;
-                margin: 50px auto;
+                margin: 10% auto;
             }
 
             .fourth-container__block_button {
@@ -59,32 +59,37 @@
 
                 .fourth-container__block_price {
                     width: 70%;
+                    height: 80px;
                     line-height: 5;
                     background-color: rgb(234, 235, 232);
+                    color: rgb(28, 28, 27);
+                    font-size: 1.125rem;
+                    letter-spacing: 0.1rem;
+                    padding-left: 5%;
                 } 
 
                 .fourth-container__block_shop-button {
                     display: flex;
                     width: 30%;
+                    height: 80px;
                     line-height: 5;
-                    background-color: rgb(147,153,119);
-                    color:#fff;    
+                    text-transform: uppercase;
+                    background-color: rgb(98, 107, 60);
+                    color: rgb(255, 255, 255);
+                    font-size: 1.125rem;
+                    letter-spacing: 0.1rem;
+                    padding-left: 5%;   
                     cursor: pointer;
 
                     .fourth-container__block_line {
-                        width: 50px;
-                        background-color: #fff;
-                        height: 2px;
+                        width: 30px;
+                        background-color: rgb(255, 255, 255);
+                        height: 3px;
                         display: block;
-                        margin-top: 40px;
+                        margin-top: 43px;
                         margin-left: 20px;
                     }
                 }
-
-                
-
-               
-                
             }
 
             .fourth-container__block_button-first {
@@ -94,24 +99,41 @@
 
                 .fourth-container__block_price {
                     width: 70%;
+                    height: 80px;
                     line-height: 5;
                     background-color: rgb(234, 235, 232);
+                    color: rgb(28, 28, 27);
+                    font-size: 1.125rem;
+                    letter-spacing: 0.1rem;
+                    padding-left: 5%;
                 } 
 
                 .fourth-container__block_shop-button {
+                    display: flex;
                     width: 30%;
+                    height: 78px;
+                    text-transform: uppercase;
                     line-height: 5;
-                    background-color: rgb(147,153,119);
-                    color:#fff;  
+                    background-color: rgb(98, 107, 60);
+                    color: rgb(255, 255, 255);
+                    font-size: 1.125rem;
+                    letter-spacing: 0.1rem;
+                    padding-left: 5%;
                     cursor: pointer;
-                }
 
-                .fourth-container__block_line {
-                    width: 20px;
-                    background-color: rgb(255, 0, 0);
-                    height: 5px;
+                    .fourth-container__block_line {
+                        width: 30px;
+                        background-color: rgb(255, 255, 255);
+                        height: 3px;
+                        display: block;
+                        margin-top: 43px;
+                        margin-left: 20px;
+                    }
                 }
             }
         }
     }
 }
+
+
+  

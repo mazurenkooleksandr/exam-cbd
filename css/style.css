@@ -48,7 +48,7 @@ html, body {
 }
 
 .third-container .third-container__tabs .third-container__tab button.active span {
-  border-bottom: 5px solid #000;
+  border-bottom: 5px solid black;
   padding-bottom: 18px;
 }
 
@@ -159,12 +159,12 @@ html, body {
 
 .fourth-container .fourth-container__slick-slider .fourth-container__block .fourth-container__block_product {
   display: block;
-  margin: 30px auto;
+  margin: 6.5% auto;
 }
 
 .fourth-container .fourth-container__slick-slider .fourth-container__block .fourth-container__block_product-box {
   display: block;
-  margin: 50px auto;
+  margin: 10% auto;
 }
 
 .fourth-container .fourth-container__slick-slider .fourth-container__block .fourth-container__block_button {
@@ -179,8 +179,13 @@ html, body {
 
 .fourth-container .fourth-container__slick-slider .fourth-container__block .fourth-container__block_button .fourth-container__block_price {
   width: 70%;
+  height: 80px;
   line-height: 5;
   background-color: #eaebe8;
+  color: #1c1c1b;
+  font-size: 1.125rem;
+  letter-spacing: 0.1rem;
+  padding-left: 5%;
 }
 
 .fourth-container .fourth-container__slick-slider .fourth-container__block .fourth-container__block_button .fourth-container__block_shop-button {
@@ -188,18 +193,23 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   width: 30%;
+  height: 80px;
   line-height: 5;
-  background-color: #939977;
-  color: #fff;
+  text-transform: uppercase;
+  background-color: #626b3c;
+  color: white;
+  font-size: 1.125rem;
+  letter-spacing: 0.1rem;
+  padding-left: 5%;
   cursor: pointer;
 }
 
 .fourth-container .fourth-container__slick-slider .fourth-container__block .fourth-container__block_button .fourth-container__block_shop-button .fourth-container__block_line {
-  width: 50px;
-  background-color: #fff;
-  height: 2px;
+  width: 30px;
+  background-color: white;
+  height: 3px;
   display: block;
-  margin-top: 40px;
+  margin-top: 43px;
   margin-left: 20px;
 }
 
@@ -215,21 +225,37 @@ html, body {
 
 .fourth-container .fourth-container__slick-slider .fourth-container__block .fourth-container__block_button-first .fourth-container__block_price {
   width: 70%;
+  height: 80px;
   line-height: 5;
   background-color: #eaebe8;
+  color: #1c1c1b;
+  font-size: 1.125rem;
+  letter-spacing: 0.1rem;
+  padding-left: 5%;
 }
 
 .fourth-container .fourth-container__slick-slider .fourth-container__block .fourth-container__block_button-first .fourth-container__block_shop-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 30%;
+  height: 78px;
+  text-transform: uppercase;
   line-height: 5;
-  background-color: #939977;
-  color: #fff;
+  background-color: #626b3c;
+  color: white;
+  font-size: 1.125rem;
+  letter-spacing: 0.1rem;
+  padding-left: 5%;
   cursor: pointer;
 }
 
-.fourth-container .fourth-container__slick-slider .fourth-container__block .fourth-container__block_button-first .fourth-container__block_line {
-  width: 20px;
-  background-color: red;
-  height: 5px;
+.fourth-container .fourth-container__slick-slider .fourth-container__block .fourth-container__block_button-first .fourth-container__block_shop-button .fourth-container__block_line {
+  width: 30px;
+  background-color: white;
+  height: 3px;
+  display: block;
+  margin-top: 43px;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
