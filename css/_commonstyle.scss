@@ -1,0 +1,247 @@
+.intro {
+    display: block;
+    margin: 0 auto;
+    background-image: url(../img/Img.png);
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    width: 100%;
+    height: 1050px;
+    position: relative;
+    color: white;
+    
+  
+    hr {
+      position: absolute;
+      top: 100px;
+      border: none;
+      width: 100%;
+      height: 3px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(255, 255, 255);
+    }
+    .vertical_text {
+      padding-left: 120px;
+      display: flex;
+      flex-direction: row;
+      transform: rotate(-90deg);
+      transform-origin: left top 0;
+      position: absolute;
+      left: 50px;
+      bottom: 0;
+      hr {
+        top: 12px;
+        left: 0px;
+        width: 100px;
+        height: 2px;
+        color: white;
+      }
+    }
+  
+    .section__one-header {
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background: linear-gradient(
+        0deg,
+        rgba(238, 238, 238, 0.126),
+        rgba(0, 0, 0, 0.3)
+      );
+      text-transform: uppercase;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+  
+      .burger {
+        display: none;
+      }
+  
+      ul {
+        display: flex;
+        padding: 30px;
+        li {
+          display: flex;
+          flex-wrap: nowrap;
+          word-wrap: normal;
+          padding-left: 30px;
+          color: white;
+        }
+      }
+      .section__one-cbd {
+        padding: 30px;
+        font-size: 28px;
+      }
+      .section__one-toolbar {
+        display: flex;
+        line-height: 90px;
+        position: relative;
+  
+        a {
+          color: white;
+          .section__one-login {
+            padding-left: 20px;
+            padding-right: 20px;
+            border: solid white;
+            border-width: 0 1px 0 3px;
+            // color: white;
+            height: 100%;
+            max-height: 100px;
+          }
+          .section__one-search {
+            padding-left: 20px;
+            padding-right: 20px;
+            border: solid white;
+            border-width: 0 1px 0 1px;
+            // color: white;
+            height: 100%;
+            max-height: 100px;
+          }
+          .section__one-cart {
+            display: inline-block;
+            height: 100px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border: solid white;
+            border-width: 0 1px 0 1px;
+            // color: white;
+            max-height: 100px;
+          }
+        }
+      }
+    }
+    .section__one-description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-right: 25%;
+      padding-top: 300px;
+      h1 {
+        text-transform: uppercase;
+        font-size: 55px;
+        font-family: "Oswald";
+        font-weight: 400;
+        line-height: 1.364;
+        letter-spacing: 10px;
+        text-align: right;
+      }
+      h5 {
+        font-size: 24px;
+        line-height: 3.125;
+        color: rgb(247, 248, 243);
+        font-weight: 100;
+        letter-spacing: 5px;
+      }
+      #shopping {
+        width: 250px;
+        height: 70px;
+        padding: 10px;
+        line-height: 2.5;
+        color: white;
+        font-size: 20px;
+        border: solid 2px white;
+        position: relative;
+        text-transform: uppercase;
+        hr {
+          width: 30px;
+          height: 2px;
+          position: absolute;
+          top: 50%;
+          left: 150px;
+        }
+      }
+      span {
+        font-size: 18px;
+        line-height: 4.167;
+        font-weight: 100;
+        letter-spacing: 5px;
+        color: white;
+      }
+    }
+  }
+
+  .we__are-section {
+    background-color: rgb(247,248,243);
+
+  }
+
+  .we__are {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 700px;
+    width: 100%;
+    height: 250px;
+    
+   
+    &:hover {
+      color: #b90000;
+      filter: invert(11%) sepia(75%) saturate(6707%) hue-rotate(238deg)
+        brightness(58%) contrast(218%);
+    }
+  
+    p {
+      position: absolute;
+      top: 75px;
+      left: 35%;
+      font-size: 24px;
+      text-transform: uppercase;
+      line-height: 1.125;
+      letter-spacing: 1.5px;
+    }
+    span {
+      position: absolute;
+      top: 125px;
+      left: 12%;
+    }
+  }
+  
+  .section__one-header_active {
+    max-width: 880px;
+    width: 90%;
+    min-height: 400px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+  
+    ul {
+      display: block;
+      color: black;
+      text-align: center;
+      a {
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+        li {
+          padding: 20px;
+          text-align: center;
+          border: 2px solid orange;
+          color: black;
+        }
+      }
+    }
+    .section__one-cbd {
+      display: none;
+    }
+    .section__one-toolbar {
+      border-width: 0;
+      display: block;
+      a {
+        .section__one-login {
+          border: none;
+          color: black;
+        }
+        .section__one-search {
+          border: none;
+          color: black;
+        }
+        .section__one-cart {
+          border: none;
+          color: black;
+        }
+      }
+    }
+  }

@@ -1,12 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html, body {
   font-size: 16px;
+}
+
+.intro {
+  display: block;
+  margin: 0 auto;
+  background-image: url(../img/Img.png);
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  width: 100%;
+  height: 1050px;
+  position: relative;
+  color: white;
+}
+
+.intro hr {
+  position: absolute;
+  top: 100px;
+  border: none;
+  width: 100%;
+  height: 3px;
+  color: white;
+  background-color: white;
+}
+
+.intro .vertical_text {
+  padding-left: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left top 0;
+          transform-origin: left top 0;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+}
+
+.intro .vertical_text hr {
+  top: 12px;
+  left: 0px;
+  width: 100px;
+  height: 2px;
+  color: white;
+}
+
+.intro .section__one-header {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(238, 238, 238, 0.126)), to(rgba(0, 0, 0, 0.3)));
+  background: linear-gradient(0deg, rgba(238, 238, 238, 0.126), rgba(0, 0, 0, 0.3));
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+}
+
+.intro .section__one-header .burger {
+  display: none;
+}
+
+.intro .section__one-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+.intro .section__one-header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  word-wrap: normal;
+  padding-left: 30px;
+  color: white;
+}
+
+.intro .section__one-header .section__one-cbd {
+  padding: 30px;
+  font-size: 28px;
+}
+
+.intro .section__one-header .section__one-toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 90px;
+  position: relative;
+}
+
+.intro .section__one-header .section__one-toolbar a {
+  color: white;
+}
+
+.intro .section__one-header .section__one-toolbar a .section__one-login {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid white;
+  border-width: 0 1px 0 3px;
+  height: 100%;
+  max-height: 100px;
+}
+
+.intro .section__one-header .section__one-toolbar a .section__one-search {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid white;
+  border-width: 0 1px 0 1px;
+  height: 100%;
+  max-height: 100px;
+}
+
+.intro .section__one-header .section__one-toolbar a .section__one-cart {
+  display: inline-block;
+  height: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: solid white;
+  border-width: 0 1px 0 1px;
+  max-height: 100px;
+}
+
+.intro .section__one-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 25%;
+  padding-top: 300px;
+}
+
+.intro .section__one-description h1 {
+  text-transform: uppercase;
+  font-size: 55px;
+  font-family: "Oswald";
+  font-weight: 400;
+  line-height: 1.364;
+  letter-spacing: 10px;
+  text-align: right;
+}
+
+.intro .section__one-description h5 {
+  font-size: 24px;
+  line-height: 3.125;
+  color: #f7f8f3;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.intro .section__one-description #shopping {
+  width: 250px;
+  height: 70px;
+  padding: 10px;
+  line-height: 2.5;
+  color: white;
+  font-size: 20px;
+  border: solid 2px white;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.intro .section__one-description #shopping hr {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 150px;
+}
+
+.intro .section__one-description span {
+  font-size: 18px;
+  line-height: 4.167;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.we__are-section {
+  background-color: #f7f8f3;
+}
+
+.we__are {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 50px;
+  max-width: 700px;
+  width: 100%;
+  height: 250px;
+}
+
+.we__are:hover {
+  color: #b90000;
+  -webkit-filter: invert(11%) sepia(75%) saturate(6707%) hue-rotate(238deg) brightness(58%) contrast(218%);
+          filter: invert(11%) sepia(75%) saturate(6707%) hue-rotate(238deg) brightness(58%) contrast(218%);
+}
+
+.we__are p {
+  position: absolute;
+  top: 75px;
+  left: 35%;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.125;
+  letter-spacing: 1.5px;
+}
+
+.we__are span {
+  position: absolute;
+  top: 125px;
+  left: 12%;
+}
+
+.section__one-header_active {
+  max-width: 880px;
+  width: 90%;
+  min-height: 400px;
+  display: block;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.section__one-header_active ul {
+  display: block;
+  color: black;
+  text-align: center;
+}
+
+.section__one-header_active ul a {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__one-header_active ul a li {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid orange;
+  color: black;
+}
+
+.section__one-header_active .section__one-cbd {
+  display: none;
+}
+
+.section__one-header_active .section__one-toolbar {
+  border-width: 0;
+  display: block;
+}
+
+.section__one-header_active .section__one-toolbar a .section__one-login {
+  border: none;
+  color: black;
+}
+
+.section__one-header_active .section__one-toolbar a .section__one-search {
+  border: none;
+  color: black;
+}
+
+.section__one-header_active .section__one-toolbar a .section__one-cart {
+  border: none;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 880px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .intro .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro .menu-btn {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+  }
+  .intro .menu-btn span,
+  .intro .menu-btn span::before,
+  .intro .menu-btn span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 2px;
+    background-color: #222;
+  }
+  .intro .menu-btn span::before,
+  .intro .menu-btn span::after {
+    content: "";
+    display: block;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .intro .menu-btn span::before {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  .intro .menu-btn span::after {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  .intro .menu-btn_active span:before {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    width: 15px;
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  .intro .menu-btn_active span:after {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+    width: 15px;
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+  }
+  .intro hr:nth-child(3) {
+    display: none;
+  }
+  .intro .section__one-header {
+    display: none;
+  }
+  .intro .section__one-header_active {
+    max-width: 880px;
+    width: 100%;
+    height: 69vh;
+    display: block;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-image: url(../img/depositphotos_42651537-stock-photo-autumn-forest-trees-nature-green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-weight: 600;
+    padding-top: 170px;
+  }
+  .intro .section__one-header_active ul {
+    display: block;
+    color: black;
+    text-align: center;
+  }
+  .intro .section__one-header_active ul a {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro .section__one-header_active ul a li {
+    -webkit-box-shadow: 12px 19px 28px 9px #000000;
+    box-shadow: 12px 19px 28px 9px #000000;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid orange;
+    border-radius: 15px;
+    color: black;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fceabb), color-stop(50%, #fccd4d), color-stop(51%, #f8b500), to(#fbdf93));
+    background: linear-gradient(to bottom, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+  }
+  .intro .section__one-header_active .section__one-cbd {
+    display: none;
+  }
+  .intro .section__one-header_active .section__one-toolbar {
+    display: block;
+  }
+  .intro .section__one-header_active .section__one-toolbar a .section__one-login {
+    width: 90%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3b679e), color-stop(50%, #2b88d9), color-stop(51%, #207cca), to(#7db9e8));
+    background: linear-gradient(to bottom, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%);
+    -webkit-box-shadow: 12px 19px 28px 9px #000000;
+    box-shadow: 12px 19px 28px 9px #000000;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: solid 2px blue;
+    border-radius: 15px;
+    color: black;
+  }
+  .intro .section__one-header_active .section__one-toolbar a .section__one-search {
+    width: 90%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3b679e), color-stop(50%, #2b88d9), color-stop(51%, #207cca), to(#7db9e8));
+    background: linear-gradient(to bottom, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%);
+    -webkit-box-shadow: 12px 19px 28px 9px #000000;
+    box-shadow: 12px 19px 28px 9px #000000;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: solid 2px blue;
+    border-radius: 15px;
+    color: black;
+  }
+  .intro .section__one-header_active .section__one-toolbar a .section__one-cart {
+    width: 90%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3b679e), color-stop(50%, #2b88d9), color-stop(51%, #207cca), to(#7db9e8));
+    background: linear-gradient(to bottom, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%);
+    -webkit-box-shadow: 12px 19px 28px 9px #000000;
+    box-shadow: 12px 19px 28px 9px #000000;
+    border: solid 2px blue;
+    border-radius: 15px;
+    color: black;
+  }
+  .intro .section__one-description {
+    padding-top: 150px;
+    padding-right: 15%;
+  }
+  .intro .section__one-description h1 {
+    font-size: 35px;
+  }
+  .intro .section__one-description h5 {
+    font-size: 14px;
+  }
+  .we__are {
+    display: none;
+  }
 }
 
 .third-container {
@@ -17,6 +495,7 @@ html, body {
   margin: 0 auto;
   background-color: #f7f8f3;
   font-size: 16px;
+  padding-top: 5%;
 }
 
 .third-container .third-container__tabs {
@@ -117,7 +596,7 @@ html, body {
 
 @media screen and (max-width: 1200px) {
   .third-container .third-container__tabs {
-    width: 100%;
+    width: 115%;
     max-width: 1180px;
     margin: 0 auto;
   }
@@ -1532,7 +2011,7 @@ html, body {
     width: 100%;
     max-width: 1920px;
     height: 100%;
-    max-height: 780px;
+    max-height: 800px;
     font-family: 'Oswald', sans-serif;
     margin: 0 auto;
     background-color: #f7f8f3;
@@ -1696,7 +2175,7 @@ html, body {
     width: 100%;
     max-width: 1920px;
     height: 100%;
-    max-height: 780px;
+    max-height: 800px;
     font-family: 'Oswald', sans-serif;
     margin: 0 auto;
     background-color: #f7f8f3;
