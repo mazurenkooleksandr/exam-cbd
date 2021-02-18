@@ -3,15 +3,21 @@ $(document).ready(function(){
         arrows: true,
         dots: true,
         slidesToShow: 3,
-        autoplay: true,
-        autoplaySpeed: 4000
-    });
+        autoplaySpeed: 4000,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                settings:"unslick",
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 1,
+                settings:"unslick",
+            }
+        }]
+    }); 
 });
 
-$(document).ready(function(){
-    $('.first-container__block').slick({
-        arrows: false,
-        dots: true,
-        slidesToShow: 1,
-    });
-});

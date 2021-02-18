@@ -43,6 +43,16 @@
         .third-container__tab_tabcontent {
             display: none;
             padding: 6px 0; 
+            
+            .third-container__tab_text-empty {
+              p {
+                margin: 20% auto;
+                font-size: 4rem;
+                text-transform: uppercase;
+                text-align: center;
+              }
+                
+            }
 
             .third-container__tab_tabcontent_flex {
               display: flex;
@@ -91,12 +101,6 @@
                     margin-bottom: 5%;
                     width: 100%;
                 } 
-            }
-
-            .third-container__tab_text-empty {
-                margin: 20% auto;
-                font-size: 4rem;
-                text-transform: uppercase;
             }
           }   
         }
