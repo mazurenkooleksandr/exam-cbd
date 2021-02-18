@@ -596,7 +596,7 @@ a {
 
 @media screen and (max-width: 1200px) {
   .third-container .third-container__tabs {
-    width: 99.9%;
+    width: 100%;
     max-width: 1180px;
     margin: 0 auto;
   }
@@ -605,14 +605,13 @@ a {
     background-color: #f7f8f3;
   }
   .third-container .third-container__tabs .third-container__tab button {
-    width: 100%;
+    width: 115%;
     font-family: 'Oswald', sans-serif;
     background-color: inherit;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding-right: 9.32%;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     font-size: 1.875rem;
@@ -621,6 +620,7 @@ a {
     padding-bottom: 1.6%;
     letter-spacing: 0.4rem;
     padding-top: 2%;
+    margin: 0 auto;
   }
   .third-container .third-container__tabs .third-container__tab button.active span {
     border-bottom: transparent;
