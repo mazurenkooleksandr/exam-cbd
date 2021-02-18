@@ -1,7 +1,7 @@
 .third-container {
     width: 100%;
     max-width: 1920px;
-    height: 900px;
+    height: 100%;
     font-family: 'Oswald', sans-serif;
     margin: 0 auto;
     background-color: rgb(247,248,243);
@@ -44,7 +44,10 @@
             display: none;
             padding: 6px 0; 
 
-            .third-container__tab_text {
+            .third-container__tab_tabcontent_flex {
+              display: flex;
+
+              .third-container__tab_text {
                 p:first-child {
                     font-size: 1.5rem;      
                     text-transform: uppercase;
@@ -95,7 +98,111 @@
                 font-size: 4rem;
                 text-transform: uppercase;
             }
+          }   
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+  .third-container {
+     .third-container__tabs {
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+
+        .third-container__tab {
+            overflow: hidden;
+            background-color: rgb(247,248,243);
+            
+            button {
+              width: 100%;
+                font-family: 'Oswald', sans-serif;
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding-right: 9.32%;
+                transition: 0.3s;
+                font-size: 1.875rem;
+                text-transform: uppercase; 
+                border-bottom: 5px solid rgba(110, 119, 74, 0.5);
+                padding-bottom: 1.6%;
+                letter-spacing: 0.4rem;
+                padding-top: 2%;
+                
+    
+                &.active span{
+                    border-bottom: transparent; 
+                    padding-bottom: 18px;   
+                }
+            } 
+        }
+    
+        .third-container__tab_tabcontent {
+            display: none;
+            padding: 6px 0; 
+
+            .third-container__tab_tabcontent_flex {
+              display: block;
+
+              .third-container__tab_text {
+                p:first-child {
+                    font-size: 3.5rem;      
+                    text-transform: uppercase;
+                    line-height: 1.5;
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 4%;
+                }
+
+                p:nth-child(2){
+                    font-size: 2.125rem;
+                    color: rgb(110, 119, 74);
+                    line-height: 1.5;
+                    width: 100%;
+                    margin-top: 2%;
+                }
+
+                p:nth-child(3){
+                    font-size: 2.125rem;
+                    color: rgb(110, 119, 74);
+                    line-height: 1.5;
+                    width: 100%;
+                    margin-top: 2%;
+                    
+                }
+
+                p:last-child{
+                    font-size: 2.125rem;
+                    color: rgb(110, 119, 74);
+                    line-height: 1.5;
+                    width: 100%;
+                    margin-top: 2%;
+                }
+            }
+
+            .third-container__tab_img {
+                margin-top: 5%;
+                img {
+                    margin-bottom: 5%;
+                    width: 100%;
+                } 
+            }
+
+            .third-container__tab_text-empty {
+                margin: 20% auto;
+                font-size: 4rem;
+                text-transform: uppercase;
+            }
+          }   
+        }
+    }
+}
+}
+  
+  
+
+
+ 
 

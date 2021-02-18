@@ -24,8 +24,8 @@
       .fifth-container__block {
         border-top: 2px solid rgba(110, 119, 74, 0.5);
         border-bottom: 2px solid rgba(110, 119, 74, 0.5);
-        width: 35%;
-        margin: 20px auto;
+        width: 37%;
+        margin: 2% auto;
         
 
         .fifth-container__block_flex {
@@ -67,28 +67,75 @@
     }   
 }
 
+@media screen and (max-width: 1200px) {
+  .fifth-container {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    background-color: rgb(247,248,243);
+    font-size: 16px;
+    padding-bottom: 5%;
+    
 
-._What_is_Cannabidiol__CBD___ {
-  font-size: 18px;
-  font-family: "Oswald";
-  color: rgb(110, 119, 74);
-  line-height: 4.167;
-  text-align: left;
-  position: absolute;
-  left: 714.701px;
-  top: 3424.89px;
-  width: 296px;
-  height: 18px;
-  z-index: 60;
+    .fifth-container__header {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      color: rgb(28, 28, 27);
+      line-height: 1.5;
+      text-align: center;
+      letter-spacing: 0.5rem;
+      padding-top: 3%;
+    }
+
+   
+
+      .fifth-container__block {
+        border-top: 2px solid rgba(110, 119, 74, 0.5);
+        border-bottom: 2px solid rgba(110, 119, 74, 0.5);
+        width: 100%;
+        margin: 2% auto;
+        
+
+        .fifth-container__block_flex {
+          display: flex;
+          justify-content: left;
+        }
+
+        .fifth-container__block_button {
+          font-family: 'Montserrat', sans-serif;
+          margin-right: 2%;
+          font-size: 5rem;
+          border: none;
+          background-color: rgb(247,248,243);
+          color: rgb(110, 119, 74);
+          outline: none;
+          cursor: pointer;
+        }
+
+        p {
+          align-items: center;
+          font-size: 1.5rem;
+          color: rgb(110, 119, 74);
+          line-height: 1.7;
+          letter-spacing: 0.3rem;
+          display: flex;
+          align-items: center;
+        }
+
+        .fifth-container__block_text {
+          display: none;
+        }
+    
+        .fifth-container__block_text_block {
+          display: block;
+          padding-left: 6.5%;
+          padding-bottom: 3%;
+          font-size: 1.7rem;
+          line-height: 2;
+          letter-spacing: 0.1rem;
+        } 
+    }   
 }
-
-
-.Icon {
-  background-image: url("Icon.png");
-  position: absolute;
-  left: 674px;
-  top: 3349px;
-  width: 20px;
-  height: 20px;
-  z-index: 61;
 }

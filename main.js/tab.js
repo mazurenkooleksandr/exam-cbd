@@ -1,4 +1,5 @@
 function openTab(evt, name) {
+    var x = window.matchMedia("(max-width: 1200px)")
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("third-container__tab_tabcontent");
     
@@ -10,8 +11,13 @@ function openTab(evt, name) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(name).style.display = "flex";
+
+    document.getElementById(name).style.display = "block";
     evt.currentTarget.className += " active";
+    
+
+
+    
 }
 
 document.getElementById("defaultOpen").click();
