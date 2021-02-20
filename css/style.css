@@ -208,6 +208,9 @@ html, body {
 
 .we__are-section {
   background-color: #f7f8f3;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .we__are {
@@ -685,7 +688,7 @@ a {
   margin: 0 auto;
   background-color: #f7f8f3;
   font-size: 16px;
-  padding-bottom: 30%;
+  padding-bottom: 10%;
 }
 
 .fourth-container .fourth-container__header {
@@ -2546,6 +2549,95 @@ a {
   }
 }
 
+.sixth-container {
+  width: 100%;
+  max-width: 1920px;
+  height: 800px;
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  font-size: 16px;
+  background-image: url("../img/img-sixth-container.png");
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20%;
+}
+
+.sixth-container::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 1920px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.sixth-container .sixth-container__slick-slider {
+  padding-top: 13%;
+}
+
+.sixth-container .sixth-container__slick-slider .sixth-container__slick-slider_block img {
+  display: block;
+  margin: 0 auto;
+}
+
+.sixth-container .sixth-container__slick-slider .sixth-container__slick-slider_block p {
+  width: 100%;
+  max-width: 864px;
+  height: 100%;
+  font-size: 1.5rem;
+  line-height: 1.818;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.sixth-container .sixth-container__slick-slider .sixth-container__slick-slider_block .sixth-container__slick-slider_block_empty {
+  font-size: 3rem;
+}
+
+.sixth-container .sixth-container__slick-slider .sixth-container__slick-slider_block .sixth-container__slick-slider_block_author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sixth-container .sixth-container__slick-slider .sixth-container__slick-slider_block .sixth-container__slick-slider_block_author hr {
+  width: 80px;
+  background-color: white;
+  height: 3px;
+  margin-top: 85px;
+}
+
+.sixth-container .sixth-container__slick-slider .sixth-container__slick-slider_block .sixth-container__slick-slider_block_author span {
+  width: 300px;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-left: 30px;
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+}
+
+.sixth-container .sixth-container__vertical-text {
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.3rem;
+  font-size: 1.5rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  margin-top: 50px;
+  margin-right: 10px;
+  z-index: 3;
+}
+
 .slick-list {
   overflow: hidden;
 }
@@ -2692,5 +2784,80 @@ a {
     padding: 0 40px;
     z-index: 1;
   }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sixth-container__slick-slider {
+  position: relative;
+  z-index: 3;
+}
+
+.sixth-container__slick-slider .slick-arrow {
+  position: absolute;
+  z-index: 10;
+  border: none !important;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.sixth-container__slick-slider .slick-arrow.slick-next {
+  top: 730px;
+  left: 45%;
+  background: url("../img/sixth-left.png") 0 0/100% no-repeat;
+  width: 50px;
+  height: 50px;
+  outline: none;
+}
+
+.sixth-container__slick-slider .slick-arrow.slick-prev {
+  top: 730px;
+  right: 45%;
+  background: url("../img/sixth-right.png") 0 0/100% no-repeat;
+  width: 50px;
+  height: 50px;
+  outline: none;
+}
+
+.sixth-container__slick-slider .slick-dots {
+  visibility: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sixth-container__slick-slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.sixth-container__slick-slider .slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  outline: none;
+  position: relative;
+  top: 290px;
+  right: 670px;
+  cursor: pointer;
+}
+
+.sixth-container__slick-slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */

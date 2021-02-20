@@ -1,0 +1,95 @@
+.sixth-container {
+    width: 100%;
+    max-width: 1920px;
+    height: 800px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    font-size: 16px;
+    background-image: url('../img/img-sixth-container.png');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20%;
+    
+
+    &::after {
+        content: '';
+        background-color:rgba(0,0,0,.4);
+        width: 100%;
+        max-width: 1920px;
+        height: 800px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    .sixth-container__slick-slider {
+        padding-top: 13%;
+
+        .sixth-container__slick-slider_block {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+    
+            p {
+                width: 100%;
+                max-width: 864px;
+                height: 100%;
+                font-size: 1.5rem;
+                line-height: 1.818;
+                letter-spacing: 0.3rem;
+                text-align: center;
+                color: rgba(255,255,255,.9);
+                margin: 0 auto;
+                padding-top: 2%;
+            }
+
+            .sixth-container__slick-slider_block_empty {
+                font-size: 3rem;
+            }
+
+            .sixth-container__slick-slider_block_author {
+                display: flex;
+
+                hr {
+                    width: 80px;
+                    background-color: rgb(255, 255, 255);
+                    height: 3px;
+                    margin-top: 85px;
+                    
+                }
+
+                span {
+                    width: 300px;
+                    text-transform: uppercase;
+                    margin-top: 70px;
+                    margin-left: 30px;
+                    color: rgb(255, 255, 255);
+                    letter-spacing: 0.2rem;
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+        
+    }
+
+    .sixth-container__vertical-text {
+        color: rgba(255, 255, 255,.6);
+        letter-spacing: 0.3rem;
+        font-size: 1.5rem;
+        transform: rotate(90deg);
+        position: absolute;
+        margin-top: 50px;
+        margin-right: 10px;
+        z-index: 3;
+    }
+
+}
+
+
+  

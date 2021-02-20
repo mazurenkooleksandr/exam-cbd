@@ -21,3 +21,15 @@ $(document).ready(function(){
     }); 
 });
 
+//sixth-container
+
+$(document).ready(function(){
+    $('.sixth-container__slick-slider').slick({
+        arrows: true,
+        dots: true,
+        slidesToShow: 1,
+        autoplaySpeed: 4000,
+        
+    }); 
+});
+
